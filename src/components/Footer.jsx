@@ -11,7 +11,7 @@ const Footer = () => {
     >
       <div className="w-[90%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 py-4">
         <div className="md:col-span-2">
-          <h2 className={`mb-3 text-xl md:text-3xl font-medium`}>About Me</h2>
+          <h2 className={`mb-3 text-2xl md:text-3xl font-medium`}>About Me</h2>
           <p>
             I am a fullstack software developer with experience working with
             HTML, CSS, JavaScript, React/Redux, Materia-Ul, NodeJS/Express,

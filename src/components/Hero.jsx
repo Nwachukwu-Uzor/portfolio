@@ -16,7 +16,7 @@ const Hero = () => {
           >
             Full-Stack Web Developer
           </p>
-          <h1 className="text-xl md:text-3xl my-10 font-normal">
+          <h1 className="text-2xl md:text-3xl my-10 font-normal">
             Hello 👏🏼 I am Uzor Nwachukwu
           </h1>
           <p>
