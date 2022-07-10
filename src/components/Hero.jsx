@@ -24,7 +24,7 @@ const Hero = () => {
             CSS, JavaScript, React/Redux, TailwindCSS, NodeJS/Express,
             MongoDB/Mongoose, SQL, C#, Asp.Net, and MVC architecture.
           </p>
-          <div className="my-4 flex items-center justify-between md:justify-start gap-5">
+          <div className="my-5 flex items-center justify-between md:justify-start gap-5">
             <button
               className={`px-3 py-2 rounded-md ${
                 lightTheme ? "bg-[#00859d]" : "bg-[#921267]"
