@@ -53,7 +53,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <ul className="flex items-center justify-center gap-6 md:w-full border-black mt-4 md:mt-0">
+          <ul className="flex items-center justify-center gap-6 md:w-full mt-4 md:mt-0">
             <li>
               <a
                 href="https://github.com/Nwachukwu-Uzor"

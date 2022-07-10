@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 
 import resume from "../assets/resume.pdf";
-import picture from "../assets/picture.png";
 
 const Hero = () => {
   const { lightTheme } = useContext(ThemeContext);

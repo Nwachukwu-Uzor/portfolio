@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
+import About from "./components/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 import ThemeContext from "./context/ThemeContext";
 
 const App = () => {
   const { lightTheme } = useContext(ThemeContext);
 
-  console.log(lightTheme);
   return (
     <div
       className={`${
@@ -15,6 +17,9 @@ const App = () => {
     >
       <Header />
       <Hero />
+      <About />
+      <Projects />
+      <Footer />
     </div>
   );
 };
