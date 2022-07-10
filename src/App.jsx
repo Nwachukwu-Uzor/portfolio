@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import ThemeContext from "./context/ThemeContext";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       } min-h-screen duration-300 ease-linear`}
     >
       <Header />
+      <Hero />
     </div>
   );
 };
