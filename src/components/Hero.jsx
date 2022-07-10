@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 
 import resume from "../assets/resume.pdf";
+import picture from "../assets/picture.png";
 
 const Hero = () => {
   const { lightTheme } = useContext(ThemeContext);
@@ -50,11 +51,11 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="px-4">
+        <div className="px-4 py-5">
           <div
             className={`${
               lightTheme ? "bg-[#d6ebef]" : "bg-[#28292d]"
-            }  mx-auto h-[300px] w-[300px] md:h-[400px] md:w-[400px] rounded-full relative duration-300`}
+            }  mx-auto h-[250px] w-[250px] md:h-[400px] md:w-[400px] rounded-full relative duration-300 animate-rotate-slow`}
           >
             <div
               className={`text-5xl absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] h-[80px] w-[80px] flex items-center justify-center ${
@@ -91,6 +92,13 @@ const Hero = () => {
               <div className="flex items-center justify-center">
                 <ion-icon name="logo-html5"></ion-icon>
               </div>
+            </div>
+            <div
+              className={`text-3xl absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] h-[80px] w-[80px] flex items-center justify-center ${
+                lightTheme ? "bg-black text-white" : "bg-white text-black"
+              } rounded-full shadow-xl`}
+            >
+              <div className="flex items-center justify-center">C#</div>
             </div>
           </div>
         </div>
