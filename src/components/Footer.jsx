@@ -27,7 +27,7 @@ const Footer = () => {
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.linkedin.com/in/uzor-nwachukwu-3467711a8"
                 target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
               >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://twitter.com/nwachukwu_uzor?t=lhl7kEOVZJp61XexA0CzCA&s=09"

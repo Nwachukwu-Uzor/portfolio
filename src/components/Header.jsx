@@ -17,7 +17,7 @@ const Header = () => {
             Uzor <span className="font-light">Nwachukwu</span>
           </h1>
         </div>
-        <div
+        {/* <div
           className={`absolute  left-[5px] right-[20px] md:w-full ${
             lightTheme
               ? "bg-black text-white md:bg-transparent md:text-black"
@@ -82,7 +82,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="absolute right-[10px] top-[50%] translate-y-[-50%] flex items-center gap-4">
           <button
             onClick={setTheme}
@@ -95,14 +95,14 @@ const Header = () => {
             ></ion-icon>
           </button>
 
-          <button
+          {/* <button
             onClick={handleNavOpen}
             className={`text-2xl ${
               navOpen ? "opacity-100" : "opacity-85"
             } ease-linear duration-300 md:hidden flex items-center`}
           >
             <ion-icon name={`${navOpen ? "close" : "menu"}`}></ion-icon>
-          </button>
+          </button> */}
         </div>
       </nav>
     </header>
