@@ -54,7 +54,7 @@ const Hero = () => {
           <div
             className={`${
               lightTheme ? "bg-[#d6ebef]" : "bg-[#28292d]"
-            }  mx-auto h-[250px] w-[250px] md:h-[400px] md:w-[400px] rounded-full relative duration-300 animate-rotate-slow`}
+            }  mx-auto h-[250px] w-[250px] md:h-[300px] md:w-[300px] lg:h-[350px] lg:w-[400px] rounded-full relative duration-300 animate-rotate-slow`}
           >
             <div
               className={`text-5xl absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] h-[80px] w-[80px] flex items-center justify-center ${
