@@ -11,6 +11,7 @@ const About = () => {
         className={`text-center text-2xl md:text-3xl py-2 px-10 font-bold border-b-4 ${
           lightTheme ? "border-b-[#005269]" : "border-b-[#921267]"
         } duration-300 w-fit mx-auto`}
+        data-aos="fade"
       >
         About Me
       </h1>
@@ -19,8 +20,9 @@ const About = () => {
           src={picture}
           alt="uzor nwachukwu"
           className="h-[150px] w-[150px] md:h-[350px] md:w-[350px] object-cover rounded-full mx-auto md:mx-0"
+          data-aos="fade-right"
         />
-        <p className="leading-loose text-md md:text-lg">
+        <p className="leading-loose text-md md:text-lg" data-aos="fade-left">
           Full-stack software developer with experience working with HTML, CSS,
           JavaScript, React/Redux, Materia-Ul, NodeJS/Express, MongoDB/Mongoose,
           SQL, C#, Asp.Net, and MVC architecture. My ultimate career goal is to

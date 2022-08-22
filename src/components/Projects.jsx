@@ -14,13 +14,19 @@ const Projects = () => {
         className={`text-center text-2xl md:text-3xl py-2 px-10 font-bold border-b-4 ${
           lightTheme ? "border-b-[#005269]" : "border-b-[#921267]"
         } duration-300 w-fit mx-auto`}
+        data-aos="fade"
       >
         Projects
       </h1>
       <div className="py-5">
         <div className="w-[90%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-4">
-          <img src={devhire} alt="DevHire" className="rounded-3xl" />
-          <div>
+          <img
+            src={devhire}
+            alt="DevHire"
+            className="rounded-3xl"
+            data-aos="fade-right"
+          />
+          <div data-aos="fade-left">
             <h2 className="text-xl md:text-2xl font-medium">Dev Hire</h2>
             <p className="leading-loose">
               A web application that allows freelancers to register and get
@@ -69,8 +75,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="w-[90%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-4">
-          <img src={tipcalculator} alt="DevHire" className="rounded-3xl" />
-          <div>
+          <img
+            src={tipcalculator}
+            alt="DevHire"
+            className="rounded-3xl"
+            data-aos="fade-right"
+          />
+          <div data-aos="fade-left">
             <h2 className="text-xl md:text-2xl font-medium">Tip Calculator</h2>
             <p className="leading-loose">
               A web application that calculates the tips a person or group of
@@ -114,8 +125,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="w-[90%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-4">
-          <img src={urlshortener} alt="DevHire" className="rounded-3xl" />
-          <div>
+          <img
+            src={urlshortener}
+            alt="DevHire"
+            className="rounded-3xl"
+            data-aos="fade-right"
+          />
+          <div data-aos="fade-left">
             <h2 className="text-xl md:text-2xl font-medium">Url Shortener</h2>
             <p className="leading-loose">
               A web application that can be used to shorten any url in a matter

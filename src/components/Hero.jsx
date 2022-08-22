@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="min-h-[70vh] flex items-center py-10">
       <div className="w-[90%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-        <div>
+        <div data-aos="fade-right">
           <p
             className={`w-fit px-3 py-2 ${
               lightTheme ? "bg-[#921267]" : "bg-[#00859d]"
@@ -50,11 +50,11 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="px-4 py-5">
+        <div className="px-4 py-5" data-aos="fade-left">
           <div
             className={`${
               lightTheme ? "bg-[#d6ebef]" : "bg-[#28292d]"
-            }  mx-auto h-[250px] w-[250px] md:h-[300px] md:w-[300px] lg:h-[350px] lg:w-[400px] rounded-full relative duration-300 animate-rotate-slow`}
+            }  mx-auto h-[250px] w-[250px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] rounded-full relative duration-300 animate-rotate-slow`}
           >
             <div
               className={`text-5xl absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] h-[80px] w-[80px] flex items-center justify-center ${
