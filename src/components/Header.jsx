@@ -17,7 +17,7 @@ const Header = () => {
             Uzor <span className="font-light">Nwachukwu</span>
           </h1>
         </div>
-        {/* <div
+        <div
           className={`absolute  left-[5px] right-[20px] md:w-full ${
             lightTheme
               ? "bg-black text-white md:bg-transparent md:text-black"
@@ -28,28 +28,18 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row items-center gap-6 md:gap-6">
             <li>
-              <a href="#" className="hover:text-[#63f2a9] duration-300">
+              <a href="#home" className="hover:text-[#63f2a9] duration-300">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-[#63f2a9] duration-300">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-[#63f2a9] duration-300">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#63f2a9] duration-300">
+              <a href="#projects" className="hover:text-[#63f2a9] duration-300">
                 Projects
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#63f2a9] duration-300">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#63f2a9] duration-300">
-                Contacts
               </a>
             </li>
           </ul>
@@ -82,7 +72,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-        </div> */}
+        </div>
         <div className="absolute right-[10px] top-[50%] translate-y-[-50%] flex items-center gap-4">
           <button
             onClick={setTheme}
@@ -95,14 +85,14 @@ const Header = () => {
             ></ion-icon>
           </button>
 
-          {/* <button
+          <button
             onClick={handleNavOpen}
             className={`text-2xl ${
               navOpen ? "opacity-100" : "opacity-85"
             } ease-linear duration-300 md:hidden flex items-center`}
           >
             <ion-icon name={`${navOpen ? "close" : "menu"}`}></ion-icon>
-          </button> */}
+          </button>
         </div>
       </nav>
     </header>

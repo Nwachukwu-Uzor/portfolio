@@ -6,7 +6,7 @@ const About = () => {
   const { lightTheme } = useContext(ThemeContext);
 
   return (
-    <section className={`py-10`}>
+    <section className={`py-10`} id="about">
       <h1
         className={`text-center text-2xl md:text-3xl py-2 px-10 font-bold border-b-4 ${
           lightTheme ? "border-b-[#005269]" : "border-b-[#921267]"

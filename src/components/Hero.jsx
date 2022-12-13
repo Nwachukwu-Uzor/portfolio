@@ -6,7 +6,7 @@ import resume from "../assets/resume.pdf";
 const Hero = () => {
   const { lightTheme } = useContext(ThemeContext);
   return (
-    <section className="min-h-[70vh] flex items-center py-10">
+    <section className="min-h-[70vh] flex items-center py-10" id="home">
       <div className="w-[90%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
         <div data-aos="fade-right">
           <p
