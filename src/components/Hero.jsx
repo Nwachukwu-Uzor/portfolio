@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Uzor-Nwachukwu-Resume.pdf";
 
 const Hero = () => {
   const { lightTheme } = useContext(ThemeContext);
@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           <p>
             A fullstack software developer 💻 with experience working with HTML,
-            CSS, JavaScript, React/Redux, TailwindCSS, NodeJS/Express,
+            CSS, JavaScript, Typescript, React/Redux, TailwindCSS, NodeJS/Express,
             MongoDB/Mongoose, SQL, C#, Asp.Net, and MVC architecture.
           </p>
           <div className="my-5 flex items-center justify-between md:justify-start gap-5">
