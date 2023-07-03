@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { Header, Footer, Projects, Hero, About } from "./components";
+import { Header, Footer, Projects, Hero, About } from "./components/index";
 import ThemeContext from "./context/ThemeContext";
 
 const App = () => {
