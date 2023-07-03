@@ -60,7 +60,7 @@ export const Projects = () => {
           ]}
           projectTools={`ReactJs, TailwindCSS, context API, axios`}
           githubUrl={`https://github.com/Nwachukwu-Uzor/english-dictionary-react`}
-          liveUrl={`https://dev-hire-ui.netlify.app/`}
+          liveUrl={`https://english-dictionary-react.vercel.app/`}
         />
         <SingleProject
           displayImage={tipcalculator}
