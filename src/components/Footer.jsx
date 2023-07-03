@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 
-const Footer = () => {
+export const Footer = () => {
   const { lightTheme } = useContext(ThemeContext);
   return (
     <footer
@@ -65,5 +65,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

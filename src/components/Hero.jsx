@@ -3,7 +3,7 @@ import ThemeContext from "../context/ThemeContext";
 
 import resume from "../assets/Uzor-Nwachukwu-Resume.pdf";
 
-const Hero = () => {
+export const Hero = () => {
   const { lightTheme } = useContext(ThemeContext);
   return (
     <section className="min-h-[70vh] flex items-center py-10" id="home">
@@ -105,5 +105,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import picture from "../assets/picture.jpg";
 import ThemeContext from "../context/ThemeContext";
 
-const About = () => {
+export const About = () => {
   const { lightTheme } = useContext(ThemeContext);
 
   return (
@@ -37,5 +37,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;
