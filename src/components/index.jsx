@@ -1,4 +1,4 @@
-export { Header } from "./pageHeader";
+export { Header } from "./header";
 export { Hero } from "./hero";
 export { Projects } from "./projects";
 export { Footer } from "./footer";
