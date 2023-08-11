@@ -11,3 +11,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+p {
+  font-weight: 200;
+}

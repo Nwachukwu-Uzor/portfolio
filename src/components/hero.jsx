@@ -15,7 +15,7 @@ export const Hero = () => {
             <p
               className={`w-fit px-3 py-2 ${
                 lightTheme ? "text-[#00859d]" : "text-[#921267]"
-              } rounded-md duration-300`}
+              } rounded-md duration-300 font-bold`}
             >
               Full-Stack Web Developer
             </p>
@@ -44,6 +44,7 @@ export const Hero = () => {
               </button>
               <a
                 href="https://api.whatsapp.com/send?phone=2348064879196"
+                rel="noreferrer"
                 className={`py-2 border-b-2  flex items-center gap-1  ${
                   lightTheme
                     ? "border-b-[#192363] text-[#192363] visited:text-[#192363] visited:border-b-[#192363]"

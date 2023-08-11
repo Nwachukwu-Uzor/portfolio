@@ -32,6 +32,7 @@ export const SingleProject = ({
               <a
                 href={githubUrl}
                 target="_blank"
+                rel="noreferrer"
                 className={`flex items-center gap-1 text-md font-normal ${
                   lightTheme
                     ? "text-[#005269] visited:text-[#005269]"
@@ -45,6 +46,7 @@ export const SingleProject = ({
               <a
                 href={liveUrl}
                 target="_blank"
+                rel="noreferrer"
                 className={`flex items-center gap-1 text-md font-normal ${
                   lightTheme
                     ? "text-[#005269] visited:text-[#005269]"

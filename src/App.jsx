@@ -1,24 +1,46 @@
-import React, { useContext, useEffect } from "react";
+import { Suspense } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Header, Footer, Projects, Hero, About } from "./components/index";
-import ThemeContext from "./context/ThemeContext";
+import { Layout } from "./layout/layout";
+import { Home, Pitch, Portfolio, ErrorPage } from "./pages";
+import { Loader } from "./components";
 
 const App = () => {
-  const { lightTheme } = useContext(ThemeContext);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          index: true,
+          element: (
+            <Suspense fallback={<Loader />}>
+              <Home />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/personal-elevator-pitch",
+          element: (
+            <Suspense fallback={<Loader />}>
+              <Pitch />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/portfolio",
+          element: (
+            <Suspense fallback={<Loader />}>
+              <Portfolio />
+            </Suspense>
+          ),
+        },
+      ],
+    },
+  ]);
 
-  return (
-    <div
-      className={`${
-        lightTheme ? "bg-[#faf9f6] text-black" : "bg-[#2d2e32] text-white"
-      } min-h-screen duration-300 ease-linear`}
-    >
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

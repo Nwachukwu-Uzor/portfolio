@@ -9,6 +9,7 @@ import englishDictionaryLight from "../assets/english-dictionary-light.png";
 import englishDictionaryDark from "../assets/english-dictionary-dark.png";
 import { Reveal } from "./reveal";
 import { fadeInVariant } from "../variants";
+import { TeamProjectVideo } from "./team-project-video";
 
 export const Projects = () => {
   const { lightTheme } = useContext(ThemeContext);
@@ -24,18 +25,19 @@ export const Projects = () => {
             lightTheme ? "border-b-[#005269]" : "border-b-[#921267]"
           } duration-300 w-fit mx-auto`}
         >
-          Projects
+          Portfolio
         </h1>
       </Reveal>
+      <TeamProjectVideo />
       <div className="py-5">
         <SingleProject
           displayImage={devhire}
           projectTitle={`Dev Hire`}
           projectDescription={[
             "A web application that allows freelancers to register and get jobs. It contains a landing page That displays a list of freelancers showing: their avatar, banner images, asking prices and display name.",
-            <br />,
+            <br key="3" />,
             "A user can add a developer to his favorites by clicking the like button and can view all favorite freelancer on a favorites page.",
-            <br />,
+            <br key="4" />,
             "The page also has a currency converter that allows a user convert the developers asking price to a list of other currencies",
           ]}
           projectTools={`ReactJs, Redux Toolkit, React Router,
@@ -53,6 +55,8 @@ export const Projects = () => {
             <a
               href="https://dictionaryapi.dev/"
               target="_blank"
+              rel="noreferrer"
+              key="6"
               className={`${
                 lightTheme
                   ? "text-[#005269] visited:text-[#005269] border-b-[#005269]"
@@ -61,7 +65,7 @@ export const Projects = () => {
             >
               Free Dictionary API
             </a>,
-            <br />,
+            <br key="7" />,
             "A user input a word an immediately get a list of it's various meaning",
           ]}
           projectTools={`ReactJs, TailwindCSS, context API, axios`}
@@ -83,11 +87,13 @@ export const Projects = () => {
           projectTitle={`Url Shortener`}
           projectDescription={[
             "A web application that can be used to shorten any url in a matter of seconds",
-            <br />,
+            <br key="8" />,
             "The project uses the",
             <a
               href="https://app.shrtco.de/"
               target="_blank"
+              rel="noreferrer"
+              key="9"
               className={`${
                 lightTheme
                   ? "text-[#005269] visited:text-[#005269] border-b-[#005269]"
@@ -97,7 +103,7 @@ export const Projects = () => {
               shrtcode API
             </a>,
             " to shorten the links.",
-            <br />,
+            <br key="10" />,
             "The project is based on design and specification of a frontend mentors challenge.",
           ]}
           projectTools={`ReactJs,
