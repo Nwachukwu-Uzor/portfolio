@@ -56,13 +56,11 @@ export const Reveal = ({
           right: 0,
           bottom: 4,
           top: 4,
-          //   background: lightTheme
-          //     ? "rgba(146, 18, 103, 0.75)"
-          //     : "rgba(0, 133, 157, 0.45)",
-          //   opacity: 0.2,
-          backgroundColor: "#000",
-          color: "#fff",
-          opacity: 0.5,
+          backgroundColor: "rgba(255, 255, 255, 0.04)",
+
+          backdropFilter: "blur(5px)",
+          webkitBackdropFilter: "blur(5px)",
+          zIndex: 10,
         }}
       ></motion.div>
     </div>

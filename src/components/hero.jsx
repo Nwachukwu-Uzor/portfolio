@@ -31,7 +31,7 @@ export const Hero = () => {
               architecture.
             </p>
           </Reveal>
-          <Reveal>
+          <Reveal width="100%">
             <div className="my-5 flex items-center justify-between md:justify-start gap-5">
               <button
                 className={`px-3 py-2 rounded-md ${
@@ -60,7 +60,7 @@ export const Hero = () => {
           </Reveal>
         </div>
         <Reveal variants={fadeInVariant} width="100%">
-          <div className="px-4 py-5" >
+          <div className="px-4 py-5 flex justify-center items-center min-h-[50vh] md:min-h-[70vh]">
             <div
               className={`${
                 lightTheme ? "bg-[#d6ebef]" : "bg-[#28292d]"
@@ -69,7 +69,7 @@ export const Hero = () => {
               <div
                 className={`text-5xl absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] h-[80px] w-[80px] flex items-center justify-center ${
                   lightTheme ? "bg-black text-white" : "bg-white text-black"
-                } rounded-full shadow-xl`}
+                } rounded-full shadow-xl z-20`}
               >
                 <div className="flex items-center justify-center">
                   <ion-icon name="logo-react"></ion-icon>
