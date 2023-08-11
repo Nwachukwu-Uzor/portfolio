@@ -10,8 +10,16 @@ const CustomNavLink = ({ path, title }) => {
       className={({ isActive }) =>
         `${
           lightTheme
-            ? `${isActive ? "text-[#921267] font-bold" : "text-black"}`
-            : `${isActive ? "text-[#00859d] font-bold" : "text-white"}`
+            ? `${
+                isActive
+                  ? "text-[#00859d] lg:text-[#921267] font-bold"
+                  : "text-black"
+              }`
+            : `${
+                isActive
+                  ? "text-[#921267] lg:text-[#00859d] font-bold"
+                  : "text-white"
+              }`
         } hover:opacity-60 duration-150 whitespace-nowrap`
       }
     >
