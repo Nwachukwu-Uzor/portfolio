@@ -1,21 +1,9 @@
 import React, { useContext, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import { Header, Footer, Projects, Hero, About } from "./components/index";
 import ThemeContext from "./context/ThemeContext";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: "ease-in-sine",
-      delay: 100,
-      once: true,
-    });
-  }, []);
-
   const { lightTheme } = useContext(ThemeContext);
 
   return (

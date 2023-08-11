@@ -7,20 +7,26 @@ import tipcalculator from "../assets/tip-calculator-js.png";
 import urlshortener from "../assets/url-shortener.jpg";
 import englishDictionaryLight from "../assets/english-dictionary-light.png";
 import englishDictionaryDark from "../assets/english-dictionary-dark.png";
+import { Reveal } from "./reveal";
+import { fadeInVariant } from "../variants";
 
 export const Projects = () => {
   const { lightTheme } = useContext(ThemeContext);
 
   return (
     <section className={`py-10`} id="projects">
-      <h1
-        className={`text-center text-2xl md:text-3xl py-2 px-10 font-bold border-b-4 ${
-          lightTheme ? "border-b-[#005269]" : "border-b-[#921267]"
-        } duration-300 w-fit mx-auto`}
-        data-aos="fade"
+      <Reveal
+        variants={fadeInVariant}
+        className="flex items-center justify-center mx-auto"
       >
-        Projects
-      </h1>
+        <h1
+          className={`text-center text-2xl md:text-3xl py-2 px-10 font-bold border-b-4 ${
+            lightTheme ? "border-b-[#005269]" : "border-b-[#921267]"
+          } duration-300 w-fit mx-auto`}
+        >
+          Projects
+        </h1>
+      </Reveal>
       <div className="py-5">
         <SingleProject
           displayImage={devhire}
