@@ -41,12 +41,8 @@ export const TeamProjectVideo = () => {
                 lightTheme ? "bg-[#00859d]" : "bg-[#921267]"
               } text-white duration-300 shadow-md hover:opacity-75`}
             >
-              <a
-                href="https://docs.google.com/presentation/d/1mQ7j44hfzvd_Fu8hhb3GmRCGLhmfeyyixEUVZfyjJ6o/edit?usp=drivesdk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Pitch Deck
+              <a href="/assets/pdf/educate-slide-deck.pdf" download>
+                Download Slide Deck
               </a>
             </button>
           </Reveal>
