@@ -2,23 +2,24 @@ import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import ThemeContext from "../context/ThemeContext";
 
-const CustomNavLink = ({ path, title }) => {
+const CustomNavLink = ({ path, title, ...rest }) => {
   const { lightTheme } = useContext(ThemeContext);
   return (
     <NavLink
       to={path}
+      {...rest}
       className={({ isActive }) =>
         `${
           lightTheme
             ? `${
                 isActive
                   ? "text-[#00859d] lg:text-[#921267] font-bold"
-                  : "text-black"
+                  : "text-white md:text-black"
               }`
             : `${
                 isActive
                   ? "text-[#921267] lg:text-[#00859d] font-bold"
-                  : "text-white"
+                  : "text-black md:text-white"
               }`
         } hover:opacity-60 duration-150 whitespace-nowrap`
       }
@@ -39,15 +40,13 @@ export const Header = () => {
   return (
     <header className="py-6">
       <nav className="w-[90%] max-w-[1240px] mx-auto md:flex justify-between items-center relative gap-16">
-        <NavLink to="/">
-          <img
-            src="/assets/images/logo.png"
-            alt="Uzor Nwachukwu"
-            className="h-8 w-8 lg:h-10 lg:w-12 hover:opacity-60 hover:scale-[1.05] duration-200"
-          />
-        </NavLink>
+        <img
+          src="/assets/images/logo.png"
+          alt="Uzor Nwachukwu"
+          className="h-8 w-8 lg:h-10 lg:w-12 hover:opacity-60 hover:scale-[1.05] duration-200"
+        />
         <div
-          className={`absolute  left-[5px] right-[20px] md:w-full ${
+          className={`absolute  z-50 left-[5px] right-[20px] md:w-full ${
             lightTheme
               ? "bg-black text-white md:bg-transparent md:text-black"
               : "bg-[#00859d]"
@@ -56,12 +55,17 @@ export const Header = () => {
           } md:opacity-100 duration-500 ease-in md:flex justify-between items-center py-6 md:py-0 shadow-md md:shadow-none rounded-lg md:rounded-none md:mr-24 gap-60`}
         >
           <ul className="flex flex-col md:flex-row items-center gap-6 md:gap-6">
-            <CustomNavLink path="/" title="Home" />
+            <CustomNavLink path="/" title="Home" onClick={handleNavOpen} />
             <CustomNavLink
               path="/personal-elevator-pitch"
               title="Elevator Pitch"
+              onClick={handleNavOpen}
             />
-            <CustomNavLink path="/portfolio" title="Portfolio" />
+            <CustomNavLink
+              path="/portfolio"
+              title="Portfolio"
+              onClick={handleNavOpen}
+            />
           </ul>
           <ul className="flex items-center justify-center gap-6 md:w-full mt-4 md:mt-0">
             <li>
