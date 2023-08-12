@@ -14,7 +14,7 @@ export const Layout = () => {
       } min-h-screen duration-300 ease-linear flex flex-col`}
     >
       <Header />
-      <section className="flex-auto">
+      <section className="flex-auto h-min-[35vh]">
         <Outlet />
       </section>
       <Footer />
