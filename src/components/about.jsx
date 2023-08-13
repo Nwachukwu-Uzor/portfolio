@@ -40,7 +40,7 @@ export const About = () => {
           />
         </Reveal>
         <Reveal>
-          <p className="leading-loose text-md md:text-lg">
+          <p className="leading-loose text-sm lg:text-base font-extralight">
             Uzor Nwachukwu is a Frontend Developer at Providus Bank PLC, one of
             Nigeria’s fastest growing commercial banks. He is passionate about
             building responsive, scalable, testable and maintainable software
