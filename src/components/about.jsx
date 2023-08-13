@@ -46,12 +46,13 @@ export const About = () => {
             building responsive, scalable, testable and maintainable software
             tools and solutions and hopes to become a senior software engineer
             and a thought leader in the software engineering in the financial
-            sector in the next 5 years. Prior to joining Providus Bank, Uzor was
-            a software engineering fellow at The Bulb Africa, one of Nigeria
-            largest talent incubators and was awarded as the 3rd best fellow in
-            his cohort. He also holds a bachelor’s degree in mechanical
-            engineering from the Federal University of Petroleum resources
-            finishing in the top 15% of his class.
+            sector in the next 5 years. <br />
+            Prior to joining Providus Bank, Uzor was a software engineering
+            fellow at The Bulb Africa, one of Nigeria largest talent incubators
+            and was awarded as the 3rd best fellow in his cohort.
+            <br /> He also holds a bachelor’s degree in mechanical engineering
+            from the Federal University of Petroleum resources finishing in the
+            top 15% of his class.
           </p>
         </Reveal>
       </div>
