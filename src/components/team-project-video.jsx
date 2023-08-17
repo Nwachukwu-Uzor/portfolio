@@ -22,13 +22,13 @@ export const TeamProjectVideo = () => {
               className={`text-center md:text-left text-xl md:text-2xl py-2 font-bold duration-300`}
             >
               Educate -{" "}
-              <i className="text-base md:text-xl font-light">
+              <i className="text-base font-light">
                 Education for Capacity
               </i>
             </h1>
           </Reveal>
           <Reveal>
-            <p className="leading-loose text-md md:text-lg font-light">
+            <p className="leading-loose font-light">
               Educate is skill acquisition platform to offer interactive
               technical skill courses and can provide video tutorials, quizzes
               and virtual simulations to teach skills such as coding, graphic
