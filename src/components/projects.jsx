@@ -7,6 +7,7 @@ import tipcalculator from "../assets/tip-calculator-js.png";
 import urlshortener from "../assets/url-shortener.jpg";
 import englishDictionaryLight from "../assets/english-dictionary-light.png";
 import englishDictionaryDark from "../assets/english-dictionary-dark.png";
+import rpsImg from "../assets/rps-img.png";
 import { Reveal } from "./reveal";
 import { fadeInVariant } from "../variants";
 import { TeamProjectVideo } from "./team-project-video";
@@ -44,6 +45,18 @@ export const Projects = () => {
           axios and SASS.`}
           githubUrl={`https://github.com/Nwachukwu-Uzor/dev-hire`}
           liveUrl={`https://dev-hire-ui.netlify.app/`}
+        />
+        <SingleProject
+          displayImage={rpsImg}
+          projectTitle={`Rock, Paper, Scissors, Spock, Lizard`}
+          projectDescription={[
+            "The rock, paper, scissors, spock, game base off designs from frontend mentors",
+            <br />,
+            "Game rules can be found by clicking on a rules button which pops up a modal.",
+          ]}
+          projectTools={`ReactJs, Typescript, Tailwind, Context API`}
+          githubUrl={`https://github.com/Nwachukwu-Uzor/rock-paper-scissor-FEM`}
+          liveUrl={`https://rock-paper-scissor-fem-bk15z-nwachukwu-uzor.vercel.app/`}
         />
         <SingleProject
           displayImage={
